@@ -9,7 +9,7 @@ if len(sys.argv) == 4:
 else:
     
     script_name = sys.argv[0]
-    principal = 1000.0
+    principle = 1000.0
     rate = 5.0
     time = 2.0
 
