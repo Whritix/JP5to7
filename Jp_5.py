@@ -3,7 +3,7 @@ import sys
 
 if len(sys.argv) == 4:
     script_name = sys.argv[0]
-    principal = float(sys.argv[1])
+    principle = float(sys.argv[1])
     rate = float(sys.argv[2])
     time = float(sys.argv[3])
 else:
