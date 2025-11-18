@@ -1,9 +1,18 @@
-scores_input = input("Enter scores separated by spaces: ")
-scores = [float(num) for num in scores_input.split()]
+import sys
+
+
+default_scores = [10, 20, 30, 40, 50]
+
+
+if len(sys.argv) <= 1:
+    scores = default_scores
+    print("No scores provided. Using default values:", scores)
+else:
+
+    scores = [float(num) for num in sys.argv[1:]]
 
 total = sum(scores)
 average = total / len(scores)
-
 maximum = max(scores)
 minimum = min(scores)
 
